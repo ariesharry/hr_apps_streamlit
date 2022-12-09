@@ -23,7 +23,6 @@ from urllib.error import URLError
 
 import warnings
 warnings.filterwarnings('ignore')
-import plotly.express as px
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
 import pickle
