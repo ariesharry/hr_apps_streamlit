@@ -23,7 +23,6 @@ from urllib.error import URLError
 
 import warnings
 warnings.filterwarnings('ignore')
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
 import pickle
 from sklearn.preprocessing import LabelEncoder
