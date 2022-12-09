@@ -21,7 +21,6 @@ import altair as alt
 from utils import show_code
 from urllib.error import URLError
 
-import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
