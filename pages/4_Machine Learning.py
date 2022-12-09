@@ -43,7 +43,8 @@ def data_frame_demo():
     df = pd.DataFrame()
     if uploaded_file is not None:
         # To read file as df:
-        df = pd.read_csv(uploaded_file)
+        df_raw = pd.read_csv(uploaded_file)
+        df = df_raw
         df.interpolate(inplace=True)
         df.dropna(inplace=True)
         df.drop('employee_id',axis=1,inplace=True)
@@ -57,6 +58,9 @@ def data_frame_demo():
         mms=MinMaxScaler(feature_range=(0,1))
         df=mms.fit_transform(df)
         df=pd.DataFrame(df)
+        st.write('Dataset Mentah')
+        st.write(df_raw)
+        st.write('Dataset anda sudah di pre processing!')
         st.write(df)
         
    
